@@ -1,0 +1,6 @@
+prompt_toolkit
+click
+rich
+colorama
+pyfiglet
+gitpython
