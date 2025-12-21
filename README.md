@@ -27,6 +27,16 @@ A powerful, futuristic multi-purpose terminal inspired by Kali Linux, Debian, Pa
 
 For portability, you can copy the script and requirements.txt to any Linux system with Python installed.
 
+## GitHub
+
+The project is hosted on GitHub. To contribute:
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit changes: `git commit -m "Description"`
+4. Push to branch: `git push origin feature-name`
+5. Create a Pull Request
+
 ## Usage
 
 Run the terminal and enter commands at the prompt.
