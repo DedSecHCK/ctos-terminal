@@ -29,6 +29,10 @@ A powerful, futuristic multi-purpose terminal inspired by Kali Linux, Debian, Pa
    - `chmod +x main.py`
 4. Run: `./main.py` or `python3 main.py`
 
+**For daily use**: The install script copies CTOS to `/usr/local/bin/ctos`, so you can run `ctos` from anywhere.
+
+**Uninstall**: `sudo rm /usr/local/bin/ctos && rm -rf ~/ctos-terminal && pip3 uninstall -r requirements.txt` (optional, removes dependencies).
+
 **Note**: If you get "command not found" for `./install.sh`, ensure it's executable with `chmod +x install.sh`. If cloned from Git, run `git config core.autocrlf false` to fix line endings on Windows clones.
 
 For portability, you can copy the script and requirements.txt to any Linux system with Python installed.

@@ -15,4 +15,10 @@ pip3 install -r requirements.txt
 # Make executable
 chmod +x main.py
 
-echo "Installation complete! Run with: ./main.py"
+# Install globally for daily use
+sudo cp main.py /usr/local/bin/ctos
+sudo chmod +x /usr/local/bin/ctos
+
+echo "Installation complete!"
+echo "Run CTOS as: ctos"
+echo "Or from anywhere: ./main.py"
