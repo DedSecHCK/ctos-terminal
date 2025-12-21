@@ -19,11 +19,17 @@ A powerful, futuristic multi-purpose terminal inspired by Kali Linux, Debian, Pa
 3. Run: `python main.py`
 
 ### Debian/Ubuntu/Linux
-1. Update system: `sudo apt update`
-2. Install Python and pip: `sudo apt install python3 python3-pip`
-3. Install dependencies: `pip3 install -r requirements.txt`
-4. Make executable: `chmod +x main.py`
-5. Run: `./main.py` or `python3 main.py`
+1. Clone or download the repository: `git clone https://github.com/DedSecHCK/ctos-terminal.git`
+2. Make install script executable: `chmod +x install.sh`
+3. Run the install script: `sudo ./install.sh`
+   Or manually:
+   - `sudo apt update`
+   - `sudo apt install python3 python3-pip`
+   - `pip3 install -r requirements.txt`
+   - `chmod +x main.py`
+4. Run: `./main.py` or `python3 main.py`
+
+**Note**: If you get "command not found" for `./install.sh`, ensure it's executable with `chmod +x install.sh`. If cloned from Git, run `git config core.autocrlf false` to fix line endings on Windows clones.
 
 For portability, you can copy the script and requirements.txt to any Linux system with Python installed.
 
