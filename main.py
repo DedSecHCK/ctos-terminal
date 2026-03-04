@@ -29,7 +29,6 @@ except ImportError:
 
 console = Console()
 
-# Configurable colors and styles
 COLORS = {
     'prompt': 'ansigreen bold',
     'input': 'ansigreen',
@@ -39,7 +38,6 @@ COLORS = {
     'success': 'green',
 }
 
-# Built-in commands
 BUILTIN_COMMANDS = {
     'help': 'Show available commands',
     'clear': 'Clear the screen',
@@ -122,22 +120,22 @@ def get_bottom_toolbar():
 def main():
     display_banner()
     
-    # Custom prompt style
+    
     style = Style.from_dict(COLORS)
     
-    # Autocomplete for built-in commands
+    
     completer = WordCompleter(list(BUILTIN_COMMANDS.keys()) + ['ls', 'pwd', 'cd', 'echo', 'cat', 'grep'])
     
     session = PromptSession(
         style=style, 
         completer=completer,
         bottom_toolbar=get_bottom_toolbar,
-        refresh_interval=1  # Update toolbar every second
+        refresh_interval=1  
     )
     
     while True:
         try:
-            # Dynamic prompt with Manjaro-style elements
+            
             prompt_parts = [
                 ('class:prompt', f'[{get_current_dir()}] > ')
             ]
