@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-"""
-CTOS Terminal - A powerful futuristic multi-purpose terminal
-Styled like Kali, Debian, Parrot, and Manjaro terminals.
-Portable and multi-purpose.
-"""
-
 import sys
 import os
 import socket
